@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ff3-q8-Q7h">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tarihi Mekanlar-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Uygulama2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Sm-Gr-Dtl">
+                                <rect key="frame" x="140.5" y="547" width="133" height="66"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="BilgiAl">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="BilgiAl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uf0-Kq-H9Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarihi Mekanlar Hakkinda Bilgi Al" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obP-3a-59c">
+                                <rect key="frame" x="20" y="238" width="374" height="79"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="obP-3a-59c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1Vw-gt-GWs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="obP-3a-59c" secondAttribute="trailing" constant="20" id="9UV-1y-PnU"/>
+                            <constraint firstItem="4Sm-Gr-Dtl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aSf-3k-EvS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Sm-Gr-Dtl" secondAttribute="bottom" constant="200" id="c55-I2-BJD"/>
+                            <constraint firstItem="obP-3a-59c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="kAN-gq-Yvp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tarihi Mekanlar" id="SrO-v5-hY5"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="Label" destination="obP-3a-59c" id="52a-We-cGF"/>
+                        <segue destination="iGS-7O-kWo" kind="show" identifier="1To3" id="gbC-hs-LTu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516" y="-12"/>
+        </scene>
+        <!--Bilgi-->
+        <scene sceneID="OvY-7I-RPX">
+            <objects>
+                <viewController id="iGS-7O-kWo" customClass="ViewController3" customModule="Uygulama2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UNk-mf-cW4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balikligol" translatesAutoresizingMaskIntoConstraints="NO" id="01q-dD-IDy">
+                                <rect key="frame" x="57" y="463" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="HJx-G1-aem"/>
+                                    <constraint firstAttribute="width" constant="300" id="PfX-Bn-jEy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2V-rT-pgT">
+                                <rect key="frame" x="40" y="168" width="334" height="200.5"/>
+                                <string key="text">"Balikligol,rivayete göre Hz. İbrahim ateşe atıldıktan sonra, bir mucize gerçekleşir ve etraf güllük gülistanlık olur. Bu mucizenin gerçekleştiği mekânın Balıklıgöl ve çevresi olduğuna inanılır."</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hGT-lG-vmv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o2V-rT-pgT" firstAttribute="top" secondItem="hGT-lG-vmv" secondAttribute="top" constant="80" id="7XP-bX-Vfn"/>
+                            <constraint firstItem="01q-dD-IDy" firstAttribute="centerX" secondItem="UNk-mf-cW4" secondAttribute="centerX" id="Cq2-Tb-DFR"/>
+                            <constraint firstItem="hGT-lG-vmv" firstAttribute="trailing" secondItem="o2V-rT-pgT" secondAttribute="trailing" constant="40" id="Rw8-uT-QDb"/>
+                            <constraint firstItem="hGT-lG-vmv" firstAttribute="bottom" secondItem="01q-dD-IDy" secondAttribute="bottom" constant="150" id="jRM-sA-d3a"/>
+                            <constraint firstItem="o2V-rT-pgT" firstAttribute="leading" secondItem="hGT-lG-vmv" secondAttribute="leading" constant="40" id="oE7-vW-1tO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bilgi" id="AdT-j1-i9C"/>
+                    <connections>
+                        <outlet property="Etiket" destination="o2V-rT-pgT" id="dx9-zd-gVh"/>
+                        <outlet property="Resim" destination="01q-dD-IDy" id="2Wt-cp-bVk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Pn-V9-L7L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2403" y="-12"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pTZ-QR-9TM">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ff3-q8-Q7h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8gS-36-bnn">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4VC-Tq-2ME" kind="relationship" relationship="viewControllers" id="Ydi-xy-Pfw"/>
+                        <segue destination="gZe-ds-r1K" kind="relationship" relationship="viewControllers" id="w5R-h1-rpo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oXd-pQ-RzO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-239" y="443"/>
+        </scene>
+        <!--Baskentler-->
+        <scene sceneID="nck-dm-T2M">
+            <objects>
+                <viewController id="Hea-wr-aYd" customClass="ViewController2" customModule="Uygulama2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jWt-Tn-q8T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sehir Hakkinda Bilgi Al" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCA-11-rsY">
+                                <rect key="frame" x="35" y="238" width="344.5" height="39.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oGE-wS-9Gj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JCA-11-rsY" firstAttribute="centerX" secondItem="jWt-Tn-q8T" secondAttribute="centerX" id="1CP-SX-MOt"/>
+                            <constraint firstItem="JCA-11-rsY" firstAttribute="top" secondItem="oGE-wS-9Gj" secondAttribute="top" constant="150" id="F2b-ir-IUg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Baskentler" id="vc8-Vu-CSA">
+                        <barButtonItem key="leftBarButtonItem" title="Londra" id="uVF-RM-Cce">
+                            <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="2vB-jQ-PW8" kind="show" id="CRm-jR-nFa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Ankara" id="kLK-xb-U84">
+                            <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <segue destination="vFH-KT-bI1" kind="show" id="sb0-tO-83d"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kdq-Jp-rnm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516" y="759"/>
+        </scene>
+        <!--Ankara-->
+        <scene sceneID="lDR-oQ-Zu5">
+            <objects>
+                <viewController id="vFH-KT-bI1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Wi-97-5Kp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jda-2Y-Bet">
+                                <rect key="frame" x="40" y="168" width="334" height="200.5"/>
+                                <string key="text">Ankara, Türkiye'nin başkenti ve en kalabalık ikinci ilidir. Nüfusu 2020 itibarıyla 5.663.322 kişidir. Bu nüfus; 25 ilçe ve bu ilçelere bağlı 1425 mahallede yaşamaktadır.</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ankara" translatesAutoresizingMaskIntoConstraints="NO" id="Kcj-Z2-nlj">
+                                <rect key="frame" x="42" y="518.5" width="330" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="IhB-DH-AJN"/>
+                                    <constraint firstAttribute="width" constant="330" id="lmr-i3-Yh1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c7l-kT-geJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jda-2Y-Bet" firstAttribute="leading" secondItem="c7l-kT-geJ" secondAttribute="leading" constant="40" id="LOn-WY-1t0"/>
+                            <constraint firstItem="c7l-kT-geJ" firstAttribute="trailing" secondItem="Jda-2Y-Bet" secondAttribute="trailing" constant="40" id="NHv-vU-Lrz"/>
+                            <constraint firstItem="Kcj-Z2-nlj" firstAttribute="top" secondItem="Jda-2Y-Bet" secondAttribute="bottom" constant="150" id="aTA-Wm-8XP"/>
+                            <constraint firstItem="Jda-2Y-Bet" firstAttribute="top" secondItem="c7l-kT-geJ" secondAttribute="top" constant="80" id="yDQ-91-ELQ"/>
+                            <constraint firstItem="Kcj-Z2-nlj" firstAttribute="centerX" secondItem="3Wi-97-5Kp" secondAttribute="centerX" id="yQL-EV-S8G"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ankara" id="tdm-OK-HZt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zdm-o8-SQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2403" y="1374"/>
+        </scene>
+        <!--Londra-->
+        <scene sceneID="iy9-45-cdE">
+            <objects>
+                <viewController id="2vB-jQ-PW8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FfY-Pk-LYN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJx-aZ-OAr">
+                                <rect key="frame" x="20" y="188" width="374" height="200.5"/>
+                                <string key="text">ondra, İngiltere'nin ve Birleşik Krallık'ın başkenti ve en kalabalık şehridir. Büyük Britanya adasının güneydoğusundaki Thames Nehri üzerinde duran Londra, iki bin yıldır büyük bir yerleşim yeri olmuştur.</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Londra" translatesAutoresizingMaskIntoConstraints="NO" id="2u4-zM-KjA">
+                                <rect key="frame" x="42" y="493" width="330" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="f0u-Tz-ANU"/>
+                                    <constraint firstAttribute="width" constant="330" id="xpC-1u-2Ih"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aZq-tR-XDf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vJx-aZ-OAr" firstAttribute="leading" secondItem="aZq-tR-XDf" secondAttribute="leading" constant="20" id="2wM-he-uJ5"/>
+                            <constraint firstItem="2u4-zM-KjA" firstAttribute="centerX" secondItem="FfY-Pk-LYN" secondAttribute="centerX" id="Eqa-Km-sfu"/>
+                            <constraint firstItem="aZq-tR-XDf" firstAttribute="bottom" secondItem="2u4-zM-KjA" secondAttribute="bottom" constant="100" id="JCT-DX-nOV"/>
+                            <constraint firstItem="vJx-aZ-OAr" firstAttribute="top" secondItem="aZq-tR-XDf" secondAttribute="top" constant="100" id="MhO-n1-jfv"/>
+                            <constraint firstItem="aZq-tR-XDf" firstAttribute="trailing" secondItem="vJx-aZ-OAr" secondAttribute="trailing" constant="20" id="o5b-jX-Ho9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Londra" id="8bi-YK-2fi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ci7-XJ-dxw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2403" y="666"/>
+        </scene>
+        <!--Tarihi Mekanlar-->
+        <scene sceneID="3VR-lR-PRX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4VC-Tq-2ME" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tarihi Mekanlar" id="0ot-97-qHm">
+                        <color key="badgeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pIy-ed-Mfb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZFj-hn-mGL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Vt-hi-8US" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603" y="-12"/>
+        </scene>
+        <!--Baskent-->
+        <scene sceneID="YN3-Jj-SMN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gZe-ds-r1K" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Baskent" id="sxe-Wx-7se"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m2l-CF-AAE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Hea-wr-aYd" kind="relationship" relationship="rootViewController" id="1au-7U-eez"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLe-p1-HYi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603" y="760"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ankara" width="800" height="526.5"/>
+        <image name="Balikligol" width="500" height="333.5"/>
+        <image name="Londra" width="315" height="145"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
