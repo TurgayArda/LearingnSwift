@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EditingCollecionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="owc-ep-Lta">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1Iq-f0-tVH">
+                                    <size key="itemSize" width="170" height="260"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="item" id="VD5-HP-sE9" customClass="Collection" customModule="EditingCollecionView" customModuleProvider="target">
+                                        <rect key="frame" x="92" y="0.0" width="230" height="260"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="odL-V0-IhX">
+                                            <rect key="frame" x="0.0" y="0.0" width="230" height="260"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="django" translatesAutoresizingMaskIntoConstraints="NO" id="eQR-bS-GGP">
+                                                    <rect key="frame" x="15" y="20" width="200" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="nzo-WC-PXn"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Django" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xM8-Fr-Mur">
+                                                    <rect key="frame" x="88" y="135" width="54" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIY-Kc-FML">
+                                                    <rect key="frame" x="99.5" y="171" width="31.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XN3-Wc-QTo">
+                                                    <rect key="frame" x="99" y="204" width="32" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Get"/>
+                                                    <connections>
+                                                        <action selector="Click:" destination="VD5-HP-sE9" eventType="touchUpInside" id="NH5-le-o1i"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="eQR-bS-GGP" secondAttribute="trailing" constant="15" id="4u1-CB-ZQ7"/>
+                                                <constraint firstItem="oIY-Kc-FML" firstAttribute="top" secondItem="xM8-Fr-Mur" secondAttribute="bottom" constant="15" id="GtJ-IP-y5w"/>
+                                                <constraint firstItem="eQR-bS-GGP" firstAttribute="leading" secondItem="odL-V0-IhX" secondAttribute="leading" constant="15" id="IKo-Vm-Z0H"/>
+                                                <constraint firstItem="xM8-Fr-Mur" firstAttribute="centerX" secondItem="odL-V0-IhX" secondAttribute="centerX" id="QNX-Ha-y3U"/>
+                                                <constraint firstAttribute="bottom" secondItem="XN3-Wc-QTo" secondAttribute="bottom" constant="20" id="Rv1-xT-BrZ"/>
+                                                <constraint firstItem="oIY-Kc-FML" firstAttribute="centerX" secondItem="odL-V0-IhX" secondAttribute="centerX" id="TKn-RC-oWo"/>
+                                                <constraint firstItem="XN3-Wc-QTo" firstAttribute="centerX" secondItem="odL-V0-IhX" secondAttribute="centerX" id="WZj-k7-gR8"/>
+                                                <constraint firstItem="eQR-bS-GGP" firstAttribute="top" secondItem="odL-V0-IhX" secondAttribute="top" constant="20" id="XVz-Gj-Zxd"/>
+                                                <constraint firstItem="xM8-Fr-Mur" firstAttribute="top" secondItem="eQR-bS-GGP" secondAttribute="bottom" constant="15" id="moY-Fm-aCY"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="Image" destination="eQR-bS-GGP" id="hgG-f7-JEz"/>
+                                            <outlet property="Name" destination="xM8-Fr-Mur" id="92v-rI-GUN"/>
+                                            <outlet property="Price" destination="oIY-Kc-FML" id="dg3-1B-lBe"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="owc-ep-Lta" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="BAp-gp-ZN0"/>
+                            <constraint firstItem="owc-ep-Lta" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="T7f-5M-EEp"/>
+                            <constraint firstItem="owc-ep-Lta" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cjo-h6-JbK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="owc-ep-Lta" secondAttribute="trailing" id="xFx-vd-SKg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CollectionView" destination="owc-ep-Lta" id="xA9-hr-4vh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="55.580357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="django" width="200" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
